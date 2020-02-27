@@ -1,0 +1,12 @@
+$grid-media-queries: (
+  mobile: 480px,
+  tablet: 980px,
+  laptop: 1280px,
+  desktop: 1440px
+);
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 1.5625rem !default;
+$grid-max-width: 1280px !default;
+$grid-narrow-width: 720px !default;
+$grid-breakpoints: $grid-media-queries !default;

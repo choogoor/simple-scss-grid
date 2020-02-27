@@ -1,0 +1,10 @@
+@mixin breakpoint($point, $type: min) {
+	@if map-has-key($grid-media-queries, $point) {
+		@media screen and (#{$type}-width: #{map-get($grid-media-queries, $point)}) {
+			@content;
+		}
+	} @else {
+		@error 'There is not value that could be retrieved from "#{$point}". '
+				+ 'Please make sure that "#{$point}" is defined in $media-queries map.';
+	}
+}

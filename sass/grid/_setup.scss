@@ -1,0 +1,76 @@
+.row {
+	max-width: $grid-max-width;
+	margin: 0 auto;
+
+	&.full-width {
+		max-width: 100%;
+	}
+
+	&.narrow-width {
+		max-width: $grid-narrow-width;
+	}
+}
+
+.columns {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-left: $grid-gutter-width * 0.5 * -1;
+	margin-right: $grid-gutter-width * 0.5 * -1;
+
+	&.reverse {
+		flex-direction: row-reverse;
+	}
+
+	&.no-gutters {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	&.align-center {
+		align-items: center;
+	}
+}
+
+.column-0 {
+	display: none;
+}
+
+@for $i from 1 through $grid-columns {
+	.column-#{$i} {
+		flex-basis: 100% / $grid-columns * $i;
+		max-width: 100% / $grid-columns * $i;
+		padding-left: $grid-gutter-width * 0.5;
+		padding-right: $grid-gutter-width * 0.5;
+
+		.no-gutters & {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+@each $breakpoint-key, $breakpoint-value in $grid-breakpoints {
+	$name: $breakpoint-key;
+	$size: $breakpoint-value;
+
+	@media only screen and (min-width: $size) {
+		.column-#{$name}-0 {
+		  display: none;
+		}
+
+		@for $i from 1 through $grid-columns {
+			.column-#{$name}-#{$i} {
+				flex-basis: 100% / $grid-columns * $i;
+				max-width: 100% / $grid-columns * $i;
+				padding-left: $grid-gutter-width * 0.5;
+				padding-right: $grid-gutter-width * 0.5;
+
+				.no-gutters & {
+					padding-left: 0;
+					padding-right: 0;
+				}
+			}
+		}
+	}
+}
