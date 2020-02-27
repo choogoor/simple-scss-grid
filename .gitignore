@@ -1,0 +1,16 @@
+.sass-cache/
+*.css.map
+
+node_modules/*
+npm-debug.log
+
+css/*
+sass/styles.scss
+
+Gruntfile.js
+package.json
+package-lock.json
+index.html
+
+.editorconfig
+.DS_Store
