@@ -6,7 +6,7 @@ Simple SASS grid is a lightweight grid built with idea to be smart and easy to u
 
 All you have to do is to copy *sass* folder content to your stylesheet folder and import `_grid.scss` file into your main stylesheet file.
 
-```Sass
+```scss
 @import 'grid';
 ```
 
@@ -88,7 +88,7 @@ There are the few options that you can edit, such as:
 - `$grid-narrow-width` - For some pages you need narrower container (blog post text for example), so this variable contain `max-width` value for it.
 - `$grid-breakpoints` - You can use your own breakpoints if you have it (You use custom breakpoint mixin for example).
 
-```Sass
+```scss
 $grid-media-queries: (
   mobile: 480px,
   tablet: 980px,
