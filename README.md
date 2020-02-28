@@ -77,7 +77,7 @@ If you want for some reason to hide column for certain breakpoint you could appl
     <div class="column-0 column-mobile-12"> ... </div>
   </div>
 </div>
-
+```
 
 ### Config
 
