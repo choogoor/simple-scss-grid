@@ -1,10 +1,10 @@
-# Simple SASS Grid
+# Simple SCSS Grid
 
-Simple SASS grid is a lightweight grid built with idea to be smart and easy to use.
+Simple SCSS grid is a lightweight grid built with idea to be smart and easy to use.
 
 ## Usage
 
-All you have to do is to copy *sass* folder content to your stylesheet folder and import `_grid.scss` file into your main stylesheet file.
+All you have to do is to copy *scss* folder content to your stylesheet folder and import `_grid.scss` file into your main stylesheet file.
 
 ```scss
 @import 'grid';
