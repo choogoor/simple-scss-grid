@@ -5,7 +5,7 @@ node_modules/*
 npm-debug.log
 
 css/*
-sass/styles.scss
+scss/styles.scss
 
 Gruntfile.js
 package.json
