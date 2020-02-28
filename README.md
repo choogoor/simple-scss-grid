@@ -88,6 +88,8 @@ There are the few options that you can edit, such as:
 - `$grid-narrow-width` - For some pages you need narrower container (blog post text for example), so this variable contain `max-width` value for it.
 - `$grid-breakpoints` - You can use your own breakpoints if you have it (You use custom breakpoint mixin for example).
 
+All of those options you can find in file `_config.scss` under *grid* folder.
+
 ```scss
 $grid-media-queries: (
   mobile: 480px,
